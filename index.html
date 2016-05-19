@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="dns-prefetch" href="//ughitsaaron.cartodb.com">
+    <link rel="dns-prefetch" href="//a.basemaps.cartocdn.com">
+    <link rel="dns-prefetch" href="//b.basemaps.cartocdn.com">
+    <link rel="dns-prefetch" href="//c.basemaps.cartocdn.com">
+    <link rel="dns-prefetch" href="//0.ashbu.cartocdn.com">
+    <link rel="dns-prefetch" href="//1.ashbu.cartocdn.com">
+    <link rel="dns-prefetch" href="//2.ashbu.cartocdn.com">
+    <link rel="dns-prefetch" href="//3.ashbu.cartocdn.com">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <title>Property in Practice || The Geography of Housing Speculation in Detroit</title>
+    <meta name="description" content="Property Praxis is a collective exercise illustrating the impact of speculation on cities. This map focuses on Detroit.">
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" content="@PropertyPraxis">
+    <meta name="twitter:title" content="Property in Practice || The Geography of Housing Speculation in Detroit">
+    <meta name="twitter:description" content="Property Praxis is a collective exercise illustrating the impact of speculation on cities. This map focuses on Detroit.">
+    <meta name="twitter:image" content="http://propertypraxis.org/assets/images/thumb-63f7c73def1a510c3cf0aa3c700c187c.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Property in Practice || The Geography of Housing Speculation in Detroit" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.propertypraxis.org/" />
+    <meta property="og:image" content="http://propertypraxis.org/assets/images/thumb-63f7c73def1a510c3cf0aa3c700c187c.jpg" />
+    <meta property="og:description" content="Property Praxis is a collective exercise illustrating the impact of speculation on cities. This map focuses on Detroit." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="uZZenAot6vyS6Be4PVHTlfA41gNktvWa-NJu7rCiQ9E" />
+    <base href="/" />
+<meta name="property-praxis/config/environment" content="%7B%22modulePrefix%22%3A%22property-praxis%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22STREETVIEW_KEY%22%3A%22AIzaSyCfdrkECzxMJ_DMIl5mpkmn00TaPYWtKnk%22%2C%22cartoWorker%22%3A%22assets/fetch-carto.js%22%2C%22filterWorker%22%3A%22assets/filter-array.js%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22%27none%27%22%2C%22script-src%22%3A%22%27self%27%20%27unsafe-eval%27%20https%3A//cdn.mxpnl.com%20https%3A//*.cartodb.com%20http%3A//*.cartodb.com%20http%3A//*.cartocdn.com%22%2C%22font-src%22%3A%22%27self%27%20http%3A//themes.googleusercontent.com%20http%3A//fonts.gstatic.com%22%2C%22connect-src%22%3A%22%27self%27%20http%3A//*.cartodb.com%20https%3A//*.cartodb.com%22%2C%22img-src%22%3A%22%27self%27%20http%3A//tile.stamen.com%20http%3A//*.cartocdn.com%20https%3A//*.fastly.net%20https%3A//*.mapbox.com%20http%3A//cartodb.s3.amazonaws.com%20http%3A//*.nokia.com%20https%3A//maps.googleapis.com%20data%3A%22%2C%22style-src%22%3A%22%27self%27%20%27unsafe-inline%27%20http%3A//fonts.googleapis.com%22%2C%22media-src%22%3A%22%27self%27%22%7D%2C%22APP%22%3A%7B%22name%22%3A%22property-praxis%22%2C%22version%22%3A%220.0.0+0b0168ab%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+
+    <link rel="stylesheet" href="assets/vendor-4c986c32f33113187eda4a93df4f2662.css" integrity="sha256-nKW6UzMYBsCNYB+aaJyKbbHh7Q2iLjHlgmxbMrGpLuI= sha512-BnzrohhdmlyNXHllM8ncsxglwt/mmQOF7bl9S2m4wMqXs0UcRPX/6vnMA32c1sSRd0/UZxMufzpdRAPHmFuoog==" >
+    <link rel="stylesheet" href="assets/main-dd74453299839a0e2ed82867ee8c15d7.css" integrity="sha256-/bt2zDt1Hc8dpJL8ZG6AaGAIxxUfkRlpZl7GQV9mPPg= sha512-BhJG5OsiFAQXMiROlT8Bw4e28H3Ucy6Jv1/WzGYBHUJeCwUmXUTUUv6MIpamYPN4387roOwT8vqblTIqZw7gjA==" >
+
+    
+  </head>
+  <body>
+    <ul class="loading-overlay is-loading">
+      <li class="dot"></li>
+      <li class="dot"></li>
+      <li class="dot"></li>
+    </ul>
+
+    
+
+    <script src="assets/vendor-ab92b6325b9bec332bdbbbcee91c1089.js" integrity="sha256-3yKM0QVfmk01DQqP3T0FN3fV0pZmSQhLcSsPApRc6/Q= sha512-qAkK9feiUocYP0A28x0VqCxFwpeCR+WziIQZhAjsZ0TvT0Poy2hWLWj1OM4lwg64WAn7OdSMb19vu+Rr/KMUyQ==" ></script>
+    <script src="assets/main-d61a1a8bed6d2ee1de8b021a8a1acbc8.js" integrity="sha256-wCz7gEtji6dEPX9arvePcEUynLEjay6yIIVB1Hlqf+Q= sha512-d3yQMdvFonOP/4BvQEkHqFoCizwCAT1no+KERHhH/b1fu9qRrkv6LRt11dWHZposGQl7KZUWXZypFld9aDL0Bg==" ></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47847770-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    
+    <svg width="0" height="0" style="display: none;">
+      <defs>
+        <symbol id="icon-search" viewBox="0 0 32 32">
+          <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+        </symbol>
+        <symbol id="icon-compass" viewBox="0 0 16 16">
+          <path d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM1.5 8c0-3.59 2.91-6.5 6.5-6.5 1.712 0 3.269 0.662 4.43 1.744l-6.43 2.756-2.756 6.43c-1.082-1.161-1.744-2.718-1.744-4.43zM9.143 9.143l-4.001 1.715 1.715-4.001 2.286 2.286zM8 14.5c-1.712 0-3.269-0.662-4.43-1.744l6.43-2.756 2.756-6.43c1.082 1.161 1.744 2.718 1.744 4.43 0 3.59-2.91 6.5-6.5 6.5z"></path>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 32 32">
+          <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+        </symbol>
+        <symbol id="icon-info" viewBox="0 0 16 16">
+          <path class="path1" d="M7 4.75c0-0.412 0.338-0.75 0.75-0.75h0.5c0.412 0 0.75 0.338 0.75 0.75v0.5c0 0.412-0.338 0.75-0.75 0.75h-0.5c-0.412 0-0.75-0.338-0.75-0.75v-0.5z"></path>
+          <path class="path2" d="M10 12h-4v-1h1v-3h-1v-1h3v4h1z"></path>
+          <path class="path3" d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM8 14.5c-3.59 0-6.5-2.91-6.5-6.5s2.91-6.5 6.5-6.5 6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5z"></path>
+        </symbol>
+        <symbol id="icon-marker" viewBox="0 0 24 24">
+          <circle cx="8" cy="8" r="7" stroke-width="1" stroke-opacity="1"></circle>
+        </symbol>
+      </defs>
+    </svg>
+  </body>
+</html>

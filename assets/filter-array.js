@@ -1,0 +1,1 @@
+onmessage=function(t){const a=t.data.model,e=t.data.match,n=t.data.filterBy;postMessage(a.filter(function(t){return e.length?t[n][0]===e[0]:t[n]===e}))};
